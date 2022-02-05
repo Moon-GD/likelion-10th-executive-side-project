@@ -1,7 +1,71 @@
 ;(()=>{
-    let first = true, second = true, third = true, fourth = true, fifth = true
+    let order = ['#FIRST', '#SECOND', '#THIRD', '#FOURTH', '#FIFTH']
+    let font_order = ['#FIRST-SPLASH', '#SECOND-SPLASH', '#THIRD-SPLASH', '#FOURTH-SPLASH', '#FIFTH-SPLASH']
+
+    function start() {
+        for(let i=0;i<5;i++) {
+            setTimeout(()=> {
+                $(order[i]).css({"background-color":"#FFB531",})
+                $(font_order[i]).css({"color":"black"})
+            }, i * 300)
+
+            setTimeout(()=> {
+                $(order[i]).css({"background-color":"white"})
+                $(font_order[i]).css({"color":"rgba(0, 0, 0, 0.3)"})
+            }, i * 300 + 300)
+        }
+
+        for(let i=0;i<5;i++) {
+            setTimeout(()=> {
+                $(order[i]).css({"background-color":"#FFB531",})
+                $(font_order[i]).css({"color":"black"})
+            }, 1800 + i * 100)
+
+            setTimeout(()=> {
+                $(order[i]).css({"background-color":"white"})
+                $(font_order[i]).css({"color":"rgba(0, 0, 0, 0.3)"})
+            }, 1800 + i * 100 + 200)
+        }
+
+        for(let i=0;i<5;i++) {
+            setTimeout(()=> {
+                $(order[i]).css({"background-color":"#FFB531",})
+                $(font_order[i]).css({"color":"black"})
+            }, 2400)
+
+            setTimeout(()=> {
+                $(order[i]).css({"background-color":"white"})
+                $(font_order[i]).css({"color":"rgba(0, 0, 0, 0.3)"})
+            }, 2600)
+
+            setTimeout(()=> {
+                $(order[i]).css({"background-color":"#FFB531",})
+                $(font_order[i]).css({"color":"black"})
+            }, 2800)
+
+            setTimeout(()=> {
+                $(order[i]).css({"background-color":"white"})
+                $(font_order[i]).css({"color":"rgba(0, 0, 0, 0.3)"})
+            }, 3000)
+
+            setTimeout(()=> {
+                $(order[i]).css({"background-color":"#FFB531",})
+                $(font_order[i]).css({"color":"black"})
+            }, 3200)
+
+            setTimeout(()=> {
+                $(order[i]).css({"background-color":"white"})
+                $(font_order[i]).css({"color":"rgba(0, 0, 0, 0.3)"})
+            }, 3400)
+        }
+    }
+
+    // 버튼 깜빡임 이벤트
+    start()
+
     // true : 비어있음
     // false : 비어있지 않음
+    let first = true, second = true, third = true, fourth = true, fifth = true
     
     // 버튼 html 변수
     let go_html = '<span class="white-space-text">전진</span>'
@@ -188,7 +252,7 @@
         }
         else {
             setTimeout(()=>{
-                if(flag == false ) {
+                if(flag == false) {
                     alert('사자가 경로를 이탈하였습니다!')
                     window.location.reload()
                 }
@@ -206,6 +270,7 @@
         if(correct) {
             setTimeout(()=>{
                 flag = true
+                alert('성공!!')
                 $('.content').fadeOut()
             }, 700)
         }
@@ -235,9 +300,6 @@
             deg += 90
         }, 950)
     }
-    
-    let order = ['#FIRST', '#SECOND', '#THIRD', '#FOURTH', '#FIFTH']
-
     
     $('.go-btn').click(() => {
         // let content = $(order[i]).html()

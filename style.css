@@ -75,7 +75,7 @@ body {
 }
 
 .key-area-h2 {
-    width: 10vw;
+    width: 9vw;
     display:flex;
     flex-direction:row;
     justify-content: center;
@@ -156,14 +156,15 @@ body {
 }
 
 .first {
-    
+    height:90vh;
 }
 
 /* ------------------------------------------------------------ */
 /* 여기서부터 demo-play */
 
 .demo-play {
-    display: none;
+    height: 90vh;
+    display:none;
 }
 
 .info-area1 {
@@ -204,7 +205,7 @@ body {
 /* ------------------------------------------------------------ */
 /* 여기서부터 second */
 .second {
-    display: none;
+    display:none;
 }
 
 /* info-area */
@@ -407,4 +408,8 @@ body {
 .play-button{
     width: 30vw;
     display: block;
+}
+
+#PAGE-CHANGE {
+    text-decoration : none;
 }

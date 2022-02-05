@@ -185,31 +185,31 @@ $('.demo-play').click(()=>{
                                 setTimeout(()=>{
                                     setTimeout(()=>{
                                         $('#first-text').fadeOut()
-                                    }, 1600)
+                                    }, 2000)
                             
                                     setTimeout(()=>{
                                         $('#second-text').fadeOut()
-                                    }, 4200)
+                                    }, 5200)
                             
                                     for(let i=0;i<5;i++)
                                     {
                                         setTimeout(()=> {
                                             setTimeout(()=>{
-                                                goOut()
-                                            }, i * 300)
-                            
-                                            setTimeout(()=>{
                                                 goOn()
                                                 lionMove()
                                             }, i * 500)
                                             
-                                        }, i * 800)
+                                            setTimeout(()=>{
+                                                goOut()
+                                            }, i * 500 + 500)
+                                            
+                                        }, i * 1200)
                             
                                         // 색깔 다시 끄기
                                         setTimeout(()=>{
                                             $('#go').css({"background-color":"white"})
                                             $('#loop').css({"background-color":"white"})
-                                        }, 6000)
+                                        }, 7600)
                                     }
                                     setTimeout(()=>{
                                         $('.second').fadeOut()
@@ -217,7 +217,7 @@ $('.demo-play').click(()=>{
                             
                                     setTimeout(()=>{
                                         $('.third').fadeIn()
-                                    }, 7430)
+                                    }, 7500)
                                 }, 3000)
                             }, 1500)
 
@@ -230,12 +230,4 @@ $('.demo-play').click(()=>{
         }, 5100)
 })
 
-// let lion_out = ["#S1", "#ST1", "#STA1", "#STAR1", "#START1"]
-// let lion_on = ["#S2", "#ST2", "#STA2", "#STAR2", "#START2"]
-$('.third').click(()=>{
-    setTimeout(()=>{
-        $('.third').fadeOut()
-        location = 'game.html'
-    }, 300)
-})
 })()
