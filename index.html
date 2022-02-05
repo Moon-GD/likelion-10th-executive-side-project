@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>길 찾기</title>
+    <!-- getbootstrap.com css 5.1 버전-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  
+    <link rel="stylesheet" href="style.css" media="screen and (min-width:768px)">
+    <link rel="stylesheet" href="under-tab.css" media="screen and (max-width:767.9px)">
+</head>
+<body>
+   <main>
+        <div class="first">
+            <section class="contents">
+                <!-- 맵 공간 -->
+                <article class="map-area">
+                    <div class="first-row">
+                        <div class="white-space-load1"></div>
+                        <div class="white-space-load1"></div>
+                        <div class="white-space-load1"></div>
+                        <div class="white-space-load1"></div>
+                        <div class="white-space-load1"></div>
+                        <div class="white-space-load1"></div>
+                    </div>
+                    <div class="second-row">
+                        <div class="white-space-load1"></div>
+                        <div class="white-space-load1"></div>
+                        <div class="white-space-load1"></div>
+                        <div class="white-space-load1"></div>
+                        <div class="white-space-load1"></div>
+                        <div class="white-space-load1"></div>
+                    </div>
+                    <div class="third-row">
+                        <div class="white-space-load1"><img class="white-space-lion" src="./assets/lion.png" alt="사자"></div>
+                        <div class="white-space-load1"></div>
+                        <div class="white-space-load1"></div>
+                        <div class="white-space-load1"></div>
+                        <div class="white-space-load1"></div>
+                        <div class="white-space-load1"></div>
+                    </div>
+                </article>
+
+                <!-- 방향 키 -->
+                <article class="key-area">
+                    <div class="direction-row">
+                        <h2 class="key-area-h2">경로</h2>
+                        <div class="white-wrapper">
+                            <div class="white-space"></div>
+                            <div class="white-space"></div>
+                            <div class="white-space"></div>
+                            <div class="white-space"></div>
+                        </div>
+                    </div>
+                    <div class="direction-row">
+                        <h2 class="key-area-h2">방향</h2>
+                        <div class="white-wrapper">
+                            <div class="white-space"><span class="white-space-text">전진</span></div>
+                            <div class="white-space"><img class="white-space-up" src="./assets/direction.png" alt="위쪽 화살표"></div>
+                            <div class="white-space"><img class="white-space-right" src="./assets/direction.png" alt="오른쪽 화살표"></div>
+                            <div class="white-space"><span class="white-space-text">반복</span></div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 게임 시작 버튼 -->
+                <article class="start-button-area">
+                    <img class="star" src="./assets/star.png" alt="별 이미지">
+                    <div class="start-button-textarea">
+                        <h2 class="start-button-h2">글자 찾기</h2>
+                        <h4 class="start-button-h4">경로를 올바르게 지정하고</h4>
+                        <h4 class="start-button-h4">멋사 관련 키워드를 찾아주세요!</h4>
+                    </div>
+                </article>
+            </section>
+        </div>
+        </div>
+        <div class="demo-play">
+            <article class="info-area1" id="method0">
+                <h2 class="info-text" id="method-text1">3가지 방법으로</h2>
+                <h2 class="info-text" id="method-text2">움직일 수 있습니다</h2>
+                <h2 class="info-text" id="method-text3">첫 번째 : 전진</h2>
+                <h2 class="info-text" id="method-text4">사자가 바라보는 방향으로</h2>
+                <h2 class="info-text" id="method-text5">1칸 이동시킵니다</h2>
+
+                <h2 class="info-text" id="method-text6">두 번째 : 방향 바꾸기</h2>
+                <h2 class="info-text" id="method-text7">위 또는 오른쪽으로</h2>
+                <h2 class="info-text" id="method-text8">방향을 바꿀 수 있습니다</h2>
+
+                <h2 class="info-text" id="method-text9">세 번째 : 반복</h2>
+                <h2 class="info-text" id="method-text10">이전까지의 경로를</h2>
+                <h2 class="info-text" id="method-text11">다시 실행합니다</h2>
+            </article>
+
+             <!-- 연습 문제 -->
+             <article class="example">
+                <div class="example-row">
+                    <div class="white-space2"><img class="white-space-lion" src="./assets/lion.png" alt="사자" id="example-lion"></div>
+                    <div class="white-space2"><span class="white-space-text text-example" id="first-letter">멋</span></div>
+                    <div class="white-space2"><span class="white-space-text text-example">쟁</span></div>
+                    <div class="white-space2"><span class="white-space-text text-example">이</span></div>
+                    <div class="white-space2"><span class="white-space-text text-example">사</span></div>
+                    <div class="white-space2"><span class="white-space-text text-example">자</span></div>
+                </div>
+            </article>
+            
+            <!-- 경로 -->
+            <article class="info-area-key" id="second-key-area">
+                <div class="direction-row" id="key2">
+                    <h2 class="key-area-h2">방향</h2>
+                    <div class="white-wrapper">
+                        <div class="white-space" id="go2"><span class="white-space-text">전진</span></div>
+                        <div class="white-space" id="up2"><img class="white-space-up" src="./assets/direction.png" alt="위쪽 화살표"></div>
+                        <div class="white-space" id="right2"><img class="white-space-right" src="./assets/direction.png" alt="오른쪽 화살표"></div>
+                        <div class="white-space"><span class="white-space-text">반복</span></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="second">
+            <!-- 안내문 -->
+            <article class="info-area">
+                <h2 class="info-text loop-info">예를 들어 다음 경로는</h2>
+                <h2 class="info-text loop-info">반복 키워드가 활용됩니다</h2>
+            </article>
+
+             <!-- 연습 문제 -->
+             <article class="example">
+                <div class="example-row">
+                    <div class="white-space2"><img class="white-space-lion" src="./assets/lion.png" alt="사자" id="example-lion"></div>
+                    <div class="white-space2"></div>
+                    <div class="white-space2"><span class="white-space-text" id="first-text">멋</span></div>
+                    <div class="white-space2"></div>
+                    <div class="white-space2"><span class="white-space-text" id="second-text">사</span></div>
+                    <div class="white-space2"></div>
+                </div>
+            </article>
+            
+            <!-- 경로 -->
+            <article class="key-area" id="second-key-area">
+                <div class="direction-row" id="key1">
+                    <h2 class="key-area-h2">경로</h2>
+                    <div class="white-wrapper">
+                        <div class="white-space2" id="go"><span class="white-space-text" id="sol1">전진</span></div>
+                        <div class="white-space2" id="loop"><span class="white-space-text" id="sol2">반복</span></div>
+                    </div>
+                </div>
+                <div class="direction-row" id="key2">
+                    <h2 class="key-area-h2">방향</h2>
+                    <div class="white-wrapper">
+                        <div class="white-space"><span class="white-space-text">전진</span></div>
+                        <div class="white-space"><img class="white-space-up" src="./assets/direction.png" alt="위쪽 화살표"></div>
+                        <div class="white-space"><img class="white-space-right" src="./assets/direction.png" alt="오른쪽 화살표"></div>
+                        <div class="white-space"><span class="white-space-text">반복</span></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="third">
+            <article class="info-area2">
+                <img src="./assets/lion-wakeup.png" alt="서있는 사자 이미지" class="lion-wakeup">
+
+                <h2 class="info-text3">게임 설명이 끝났습니다!</h2>
+                <h2 class="info-text3">게임 시작을 위해서는</h2>
+                <h2 class="info-text3">화면을 클릭해주세요</h2>
+            </article>
+
+            <!--<article class="load-area">
+                <div class="direction-row">
+                    <h2 class="white-space3-h2"></h2>
+                    <div class="white-wrapper">
+                        <div class="white-space3"><span class="white-space-text" id="S1">S</span></div>
+                        <div class="white-space3"><span class="white-space-text" id="ST1">T</span></div>
+                        <div class="white-space3"><span class="white-space-text" id="STA1">A</span></div>
+                        <div class="white-space3"><span class="white-space-text" id="STAR1">R</span></div>
+                        <div class="white-space3"><span class="white-space-text" id="START1">T</span></div>
+                    </div>
+                </div>
+            </article>-->
+<!--
+            <article class="keyword-area">
+                <div class="direction-row">
+                    <h2 class="white-space3-h2"></h2>
+                    <div class="white-wrapper">
+                        <div class="white-space3"><span class="white-space-text" id="S2">S</span></div>
+                        <div class="white-space3"><span class="white-space-text" id="ST2">T</span></div>
+                        <div class="white-space3"><span class="white-space-text" id="STA2">A</span></div>
+                        <div class="white-space3"><span class="white-space-text" id="STAR2">R</span></div>
+                        <div class="white-space3"><span class="white-space-text" id="START2">T</span></div>
+                    </div>
+                </div>
+            </article>-->
+        </div>
+   </main> 
+
+   <!-- code.jquery.com 3.x version -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+   </script>
+   <script src="script.js"></script>
+</body>
+</html>
