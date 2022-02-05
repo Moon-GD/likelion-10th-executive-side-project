@@ -13,33 +13,33 @@
     <title>길 찾기</title>
 </head>
 <body>
-    <main>
+    <main class="content">
         <!-- map area -->
         <article class="map-area">
             <div class="direction-row">
                 <div class="white-space-alpha"><span class="white-space-text"></span></div>
                 <div class="white-space-alpha"><span class="white-space-text"></span></div>
                 <div class="white-space-alpha"><span class="white-space-text"></span></div>
-                <div class="white-space2"><span class="white-space-text">처</span></div>
-                <div class="white-space2"><span class="white-space-text">럼</span></div>
+                <div class="white-space2"><span class="white-space-text sixth-letter">처</span></div>
+                <div class="white-space2"><span class="white-space-text seventh-letter">럼</span></div>
             </div>
             <div class="direction-row">
                 <div class="white-space-alpha"><span class="white-space-text"></span></div>
                 <div class="white-space-alpha"><span class="white-space-text"></span></div>
-                <div class="white-space2"><span class="white-space-text">사</span></div>
-                <div class="white-space2"><span class="white-space-text">자</span></div>
+                <div class="white-space2"><span class="white-space-text fourth-letter">사</span></div>
+                <div class="white-space2"><span class="white-space-text fifth-letter">자</span></div>
                 <div class="white-space-alpha"><span class="white-space-text"></span></div>
             </div>
             <div class="direction-row">
                 <div class="white-space-alpha"><span class="white-space-text"></span></div>
-                <div class="white-space2"><span class="white-space-text">쟁</span></div>
-                <div class="white-space2"><span class="white-space-text">이</span></div>
+                <div class="white-space2"><span class="white-space-text second-letter" class="second-letter">쟁</span></div>
+                <div class="white-space2"><span class="white-space-text third-letter">이</span></div>
                 <div class="white-space-alpha"><span class="white-space-text"></span></div>
                 <div class="white-space-alpha"><span class="white-space-text"></span></div>
             </div>
             <div class="direction-row">
                 <div class="white-space2"><img class="white-space-lion" id="LION" src="./assets/lion.png" alt="사자"></div>
-                <div class="white-space2"><span class="white-space-text">멋</span></div>
+                <div class="white-space2"><span class="white-space-text first-letter">멋</span></div>
                 <div class="white-space-alpha"><span class="white-space-text"></span></div>
                 <div class="white-space-alpha"><span class="white-space-text"></span></div>
                 <div class="white-space-alpha"><span class="white-space-text"></span></div>
@@ -64,19 +64,20 @@
                     <button class="direction-btn" id="GO"><div class="white-space"><span class="white-space-text">전진</span></div></button>
                     <button class="direction-btn" id="NORTH"><div class="white-space"><img class="white-space-up" src="./assets/direction.png" alt="위쪽 화살표"></div></button>
                     <button class="direction-btn" id="EAST"><div class="white-space"><img class="white-space-right" src="./assets/direction.png" alt="오른쪽 화살표"></div></button>
-                    <button class="direction-btn" id="REPEAT"><div class="white-space"><span class="white-space-text">반복</span></div></button>
+                    <button class="direction-btn" id="REPEAT"><div class="white-space" id="LOOP-SPACE"><span class="white-space-text">반복</span></div></button>
                 </div>
             </div>
         </article>
 
-        <div class="direction-row">
+        <div class="direction-row2">
             <button type="button" class="btn-lg btn-warning go-btn">출발</button>
+            <button type="button" class="btn-lg btn-danger go-btn reload-btn">재시작</button>
         </div>
 
         <!-- 넘어가기 -->
         <article class="submit-area">
-            <div class="black-shadow">
-                아직은 어려워요.. 넘어가기..!
+            <div class="black-shadow pass">
+                아직은 어려워요..
             </div>
         </article>
     </main>
