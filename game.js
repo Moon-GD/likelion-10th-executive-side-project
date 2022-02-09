@@ -188,6 +188,7 @@
         false, false, false
     ]
 
+<<<<<<< HEAD
     let footer = document.querySelector('footer')
     let footer_style = window.getComputedStyle(footer)
     let distance = '5vw'
@@ -196,10 +197,13 @@
         distance = '8vw'
     }
    
+=======
+>>>>>>> 6f571f7ee98c1303f77078e3bfe443e37a703b40
     function go() {
         // 글자 위치 정보
 
         if(deg == 0 || deg == 360) {
+<<<<<<< HEAD
             $('#LION').animate({left:`+=` + distance}, 500)
             x++
         }
@@ -213,49 +217,92 @@
         }
         else if(deg == 180 || deg == -180) {
             $('#LION').animate({left:`-=` + distance}, 500)
+=======
+            $('#LION').animate({left:"+=5vw"}, 500)
+            x++
+        }
+        else if(deg == 90 || deg == -270) {
+            $('#LION').animate({bottom:"-=5vw"}, 500)
+            y--
+        }
+        else if(deg == -90 || deg == 270) {
+            $('#LION').animate({bottom:"+=5vw"}, 500)
+            y++
+        }
+        else if(deg == 180 || deg == -180) {
+            $('#LION').animate({left:"-=5vw"}, 500)
+>>>>>>> 6f571f7ee98c1303f77078e3bfe443e37a703b40
             x--
         }
 
         if(x==1 && y==0) {
             setTimeout(()=>{
                 $('.first-letter').fadeOut()
+<<<<<<< HEAD
             }, 400)
+=======
+            }, 500)
+>>>>>>> 6f571f7ee98c1303f77078e3bfe443e37a703b40
             word_list[0] = true
         }
         else if(x==1 && y==1) {
             setTimeout(()=>{
                 $('.second-letter').fadeOut()
+<<<<<<< HEAD
             }, 400)
+=======
+            }, 500)
+>>>>>>> 6f571f7ee98c1303f77078e3bfe443e37a703b40
             word_list[1] = true
         }
         else if(x==2 && y==1) {
             setTimeout(()=>{
                 $('.third-letter').fadeOut()
+<<<<<<< HEAD
             }, 400)
+=======
+            }, 500)
+>>>>>>> 6f571f7ee98c1303f77078e3bfe443e37a703b40
             word_list[2] = true
         }
         else if(x==2 && y==2) {
             setTimeout(()=>{
                 $('.fourth-letter').fadeOut()
+<<<<<<< HEAD
             }, 400)
+=======
+            }, 500)
+>>>>>>> 6f571f7ee98c1303f77078e3bfe443e37a703b40
             word_list[3] = true
         }
         else if(x==3 && y==2) {
             setTimeout(()=>{
                 $('.fifth-letter').fadeOut()
+<<<<<<< HEAD
             }, 400)
+=======
+            }, 500)
+>>>>>>> 6f571f7ee98c1303f77078e3bfe443e37a703b40
             word_list[4] = true
         }
         else if(x==3 && y==3) {
             setTimeout(()=>{
                 $('.sixth-letter').fadeOut()
+<<<<<<< HEAD
             }, 400)
+=======
+            }, 500)
+>>>>>>> 6f571f7ee98c1303f77078e3bfe443e37a703b40
             word_list[5] = true
         }
         else if(x==4 && y==3) {
             setTimeout(()=>{
                 $('.seventh-letter').fadeOut()
+<<<<<<< HEAD
             }, 400)
+=======
+            }, 500)
+>>>>>>> 6f571f7ee98c1303f77078e3bfe443e37a703b40
             word_list[6] = true
         }
         else {

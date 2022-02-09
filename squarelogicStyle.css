@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: inline-block;
+  background-color: #000000;
+  height: 5vh;
+  width: 98.94%; /*배경 가로사이즈에 맞추기위함 */
+}
+
+body {
+  width: 100%;
+  text-align: center;
+}
+
+td:hover {
+  background: grey;
+}
+
+thead tr th {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-align: right;
+}
+
+tbody tr th {
+  text-align: right;
+}
+
+#log {
+  width: auto;
+  height: 100%;
+  display: block;
+}
+
+.mainBox {
+  display: inline-block;
+  height: 100vh;
+  width: 65.666372462vh;
+  margin: 0;
+  background-image: url("assets/squareBackground.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.subHeader {
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.whiteBox {
+  background-color: white;
+  border-radius: 10%;
+  margin: 0px 10px;
+  text-align: center;
+}
+
+.title {
+  font-family: Roboto;
+  font-size: 135%;
+  width: 45%;
+  height: 13vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.btn {
+  display: block;
+  width: 13vh;
+  height: 13vh;
+}
+
+button img {
+  width: 100%;
+  height: auto;
+}
+
+.character {
+  width: 30%;
+  height: auto;
+}
+.heart {
+  width: 15%;
+  height: auto;
+}
+
+.tableBox {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+th,
+td {
+  border: 1px solid #bcbcbc;
+}
+
+table {
+  width: 58vh;
+  height: 58vh;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.noLineTop {
+  border-top: none;
+}
+
+.noLineBottom {
+  border-bottom: none;
+}
+
+.noLineLeft {
+  border-left: none;
+}
+
+.noLineRight {
+  border-right: none;
+}
