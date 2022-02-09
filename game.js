@@ -188,66 +188,74 @@
         false, false, false
     ]
 
+    let footer = document.querySelector('footer')
+    let footer_style = window.getComputedStyle(footer)
+    let distance = '5vw'
+    if(footer_style.color == 'rgb(128, 0, 128)')
+    {
+        distance = '8vw'
+    }
+   
     function go() {
         // 글자 위치 정보
 
         if(deg == 0 || deg == 360) {
-            $('#LION').animate({left:"+=5vw"}, 500)
+            $('#LION').animate({left:`+=` + distance}, 500)
             x++
         }
         else if(deg == 90 || deg == -270) {
-            $('#LION').animate({bottom:"-=5vw"}, 500)
+            $('#LION').animate({bottom:`-=` + distance}, 500)
             y--
         }
         else if(deg == -90 || deg == 270) {
-            $('#LION').animate({bottom:"+=5vw"}, 500)
+            $('#LION').animate({bottom:`+=` + distance}, 500)
             y++
         }
         else if(deg == 180 || deg == -180) {
-            $('#LION').animate({left:"-=5vw"}, 500)
+            $('#LION').animate({left:`-=` + distance}, 500)
             x--
         }
 
         if(x==1 && y==0) {
             setTimeout(()=>{
                 $('.first-letter').fadeOut()
-            }, 500)
+            }, 400)
             word_list[0] = true
         }
         else if(x==1 && y==1) {
             setTimeout(()=>{
                 $('.second-letter').fadeOut()
-            }, 500)
+            }, 400)
             word_list[1] = true
         }
         else if(x==2 && y==1) {
             setTimeout(()=>{
                 $('.third-letter').fadeOut()
-            }, 500)
+            }, 400)
             word_list[2] = true
         }
         else if(x==2 && y==2) {
             setTimeout(()=>{
                 $('.fourth-letter').fadeOut()
-            }, 500)
+            }, 400)
             word_list[3] = true
         }
         else if(x==3 && y==2) {
             setTimeout(()=>{
                 $('.fifth-letter').fadeOut()
-            }, 500)
+            }, 400)
             word_list[4] = true
         }
         else if(x==3 && y==3) {
             setTimeout(()=>{
                 $('.sixth-letter').fadeOut()
-            }, 500)
+            }, 400)
             word_list[5] = true
         }
         else if(x==4 && y==3) {
             setTimeout(()=>{
                 $('.seventh-letter').fadeOut()
-            }, 500)
+            }, 400)
             word_list[6] = true
         }
         else {
