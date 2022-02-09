@@ -54,11 +54,7 @@ main {
     justify-content: center;
     align-items: center;
     font-weight: 500;
-<<<<<<< HEAD
     font-size: 2.5vh;
-=======
-    font-size: 3vh;
->>>>>>> 6f571f7ee98c1303f77078e3bfe443e37a703b40
     margin-bottom: 0;
     margin-top: 0;
 }
@@ -69,11 +65,7 @@ main {
 }
 
 .white-space-text {
-<<<<<<< HEAD
     font-size: 1.6vh;
-=======
-    font-size: 2vh;
->>>>>>> 6f571f7ee98c1303f77078e3bfe443e37a703b40
     font-weight: 700;
 }
 
@@ -123,24 +115,14 @@ main {
 }
 
 .white-space-up {
-<<<<<<< HEAD
     width: 4vw;
     height: 4vw;
-=======
-    width:5vh;
-    height: 5vh;
->>>>>>> 6f571f7ee98c1303f77078e3bfe443e37a703b40
     transform: rotate(-180deg);
 }
 
 .white-space-right {
-<<<<<<< HEAD
     width: 4vw;
     height: 4vw;
-=======
-    width: 5vh;
-    height: 5vh;
->>>>>>> 6f571f7ee98c1303f77078e3bfe443e37a703b40
     transform: scaleX(-1);
 }
 
@@ -182,13 +164,9 @@ main {
 
 .gray {
     color: rgba(0, 0, 0, 0.3);
-<<<<<<< HEAD
 }
 
   /* 임시 태그 footer */ 
   footer {
     color:'black'
   }
-=======
-}
->>>>>>> 6f571f7ee98c1303f77078e3bfe443e37a703b40
