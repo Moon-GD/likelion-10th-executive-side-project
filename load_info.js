@@ -16,9 +16,27 @@ function goOut() {
     $('#loop').css({"background-color":"#FFB531"})
 }
 
+let footer = document.querySelector('footer')
+let footer_style = window.getComputedStyle(footer)
+let distance = '5vw'
+
+// mobile 환경
+if(footer_style.color == 'rgb(255, 0, 0)') {
+    distance = '5vh'
+}
+// tab 환경
+else if(footer_style.color == 'rgb(255, 165, 0)')
+{
+    distance = '8vw'
+}
+// pc 환경
+else {
+    distance = '5vw'
+}
+
 function lionMove() {
     goOn()
-    $('.white-space-lion').animate({left:'+=5vw'})
+    $('.white-space-lion').animate({left:'+=' + distance})
 }
 
 $('.demo-play').click(()=>{
@@ -40,7 +58,7 @@ $('.demo-play').click(()=>{
         }, 1600)
 
         setTimeout(()=>{
-            $('#example-lion').animate({left:"+=5vw"})
+            $('#example-lion').animate({left:"+=" + distance})
         }, 2000)
 
         setTimeout(()=> {
@@ -57,7 +75,7 @@ $('.demo-play').click(()=>{
         }, 3500)
 
         setTimeout(()=>{
-            $('#example-lion').animate({left:"-=5vw"})
+            $('#example-lion').animate({left:"-=" + distance})
             $('#method-text4').fadeOut()
             $('#method-text5').fadeOut()
         }, 5000)
@@ -229,5 +247,4 @@ $('.demo-play').click(()=>{
             })
         }, 5100)
 })
-
 })()

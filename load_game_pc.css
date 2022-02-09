@@ -3,83 +3,75 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    width: 100vw;
-    height: calc(var(--vh, 1vh) * 100);
-    margin: 0;
-    align-items: center;
-    text-align: center;
-  }
-  
-  main {
+    height:100vh;
+}
+
+main {
     display:flex;
     flex-direction: column;
-  }
-  
-  /* map area */
-  .map-area {
-    margin: 20vh auto 0;
-  }
-  
-  
-  /* control area */
-  .control-area {
+}
+
+/* map area */
+.map-area {
+    margin: 8vh auto 0;
+}
+
+
+/* control area */
+.control-area {
     background-color: rgba(0, 0, 0, 0.3);
-    height: 18vh;
+    height: 30vh;
     border-radius: 3vh;
-    margin:2vh auto 0;
-    width: 60vw;
+    margin:2.5vh auto 0;
+    width: 30vw;
     display:flex;
     flex-direction:column;
     justify-content:space-evenly;
-  }
-  
-  .direction-row {
+}
+
+.direction-row {
     display:flex;
     flex-direction: row;
     margin-right: 1vh;
     color:white;
     text-align: center;
     justify-content:center;
-  }
-  
-  .direction-row2 {
+}
+
+.direction-row2 {
     display:flex;
     flex-direction: row;
-    margin-top: 2vh;
+    margin-right: 1vh;
     color:white;
     text-align: center;
     justify-content:center;
-  }
-  
-  .key-area-h2 {
-    width: 7vw;
+}
+
+.key-area-h2 {
+    width: 10vw;
     display:flex;
     flex-direction:row;
     justify-content: center;
     align-items: center;
     font-weight: 500;
-    font-size: 3vw;
+    font-size: 2.5vh;
     margin-bottom: 0;
     margin-top: 0;
-    text-align: center;
-    margin-right: 1vw;
-    
-  }
-  
-  .white-wrapper {
+}
+
+.white-wrapper {
     display:flex;
     align-items: center;
-    width: 42vw;
-  }
-  
-  .white-space-text {
-    font-size: 1.43vh;
+}
+
+.white-space-text {
+    font-size: 1.6vh;
     font-weight: 700;
-  }
-  
-  .white-space {
-    width: 8vw;
-    height: 8vw;
+}
+
+.white-space {
+    width: 5vw;
+    height: 5vw;
     background-color: #fff;
     border-radius: 1vh;
     display:flex;
@@ -88,18 +80,18 @@ body {
     text-align: center;
     color:black;
     border:1px solid rgba(0,0,0,1);
-  }
-  
-  .white-space-lion {
+}
+
+.white-space-lion {
     left:0;
-    width: 7vw;
-    height: 7vw;
+    width: 4.5vw;
+    height: 4.5vw;
     position: relative;
-  }
-  
-  .white-space2 {
-    width: 8vw;
-    height: 8vw;
+}
+
+.white-space2 {
+    width: 5vw;
+    height: 5vw;
     background-color: #fff;
     border-radius: 1vh;   
     display:flex;
@@ -108,11 +100,11 @@ body {
     text-align: center;
     color:black;
     border:1px solid rgba(0,0,0,1);
-  }
-  
-  .white-space-alpha {
-    width: 8vw;
-    height: 8vw;
+}
+
+.white-space-alpha {
+    width: 5vw;
+    height: 5vw;
     background-color: rgba(0, 0, 0, 0);
     border-radius: 1vh;   
     display:flex;
@@ -120,61 +112,62 @@ body {
     justify-content: center;
     text-align: center;
     color:black;
-  }
-  
-  .white-space-up {
-    width: 7vw;
-    height: 7vw;
+}
+
+.white-space-up {
+    width: 4vw;
+    height: 4vw;
     transform: rotate(-180deg);
-  }
-  
-  .white-space-right {
-    width: 7vw;
-    height: 7vw;
+}
+
+.white-space-right {
+    width: 4vw;
+    height: 4vw;
     transform: scaleX(-1);
-  }
-  
-  .direction-btn {
+}
+
+.direction-btn {
     border:none;
     background-color: rgba(0, 0, 0, 0);
     padding:0;
-  }
-  
-  /* submit area */
-  .submit-area {
-    margin: 2vh auto 0;
-  }
-  
-  .black-shadow {
+}
+
+/* submit area */
+.submit-area {
+    margin: 2.5vh auto 0;
+}
+
+.black-shadow {
     background-color: rgba(0, 0, 0, 0.3);
     color:white;
-    width: 60vw;
-    height:6vh;
+    width:30vw;
+    height:10vh;
     display:flex;
     justify-content: center;
     align-items: center;
     border-radius:4vh;
-    margin-top: 2vh;
-    font-size: 3vw;
+    font-size: 2.5vh;
     font-weight: 700;
-  }
-  
-  .go-btn {
+}
+
+.go-btn {
     color:white;
     font-weight: 700;
-    width: 22vw;
-    font-size: 2vw;
+    width: 13vw;
+    font-size: 2vh;
+    height: 5vh;
     margin-top: 2.5vh;
     text-align: center;
-    margin-right: 3vw;
-    margin-left: 3vw;
-  }
-  
-  .gray {
+    margin-left: 0.5vh;
+    margin-right: 0.5vh;
+}
+
+.gray {
     color: rgba(0, 0, 0, 0.3);
-  }
+}
 
   /* 임시 태그 footer */ 
   footer {
-    color:purple
+    display: none;
+    color:'black'
   }

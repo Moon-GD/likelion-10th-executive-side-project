@@ -176,5 +176,6 @@ body {
 
   /* 임시 태그 footer */ 
   footer {
+    display: none;
     color:purple
   }
