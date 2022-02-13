@@ -14,20 +14,6 @@ body {
   text-align: center;
 }
 
-td:hover {
-  background: grey;
-}
-
-thead tr th {
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  text-align: right;
-}
-
-tbody tr th {
-  text-align: right;
-}
-
 #log {
   width: auto;
   height: 100%;
@@ -61,7 +47,7 @@ tbody tr th {
 
 .title {
   font-family: Roboto;
-  font-size: 135%;
+  font-size: 130%;
   width: 45%;
   height: 13vh;
   display: flex;
@@ -94,6 +80,26 @@ button img {
   display: flex;
   width: 100%;
   justify-content: center;
+}
+
+td:hover {
+  background: grey;
+}
+
+thead tr th {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-align: right;
+}
+
+tbody tr th {
+  text-align: right;
+}
+
+table,
+th,
+td {
+  font-size: 0.9em;
 }
 
 th,
