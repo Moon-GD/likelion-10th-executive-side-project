@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+}
+
+/*reset.css 대신으로다가...*/
+body {
+  width: 100%;
+  text-align: center;
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+
+.mainBox {
+  top: 0%;
+  display: inline-block;
+  height: 100vh;
+  width: 65.666372462vh;
+  margin: 0;
+  background-image: url("assets/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index:-2;
+  text-align: center;
+}
+
+/*이미지 dim처리*/
+.dim {
+  position: absolute;
+  top: 0%;
+  display: block;
+  height: 100vh;
+  width: 65.666372462vh;
+  margin: 0;
+  z-index:0;
+  background: rgba(0, 0, 0, 0.19);
+}
+
+
+.lion_header{
+  top: 0;
+  display: inline-block;
+  background-color: #000000;
+  height: 4.677846425vh;
+  width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.game_info {
+    display: inline-block;
+    margin-top: 4.5vh;
+    margin-left: 7.5vh;
+    width: 50.2849462366vh;
+    height: 17.5vh;
+    background: #FFFFFF;
+    border-radius: 5.2vh;
+
+    text-align: center;
+    justify-content: center;
+    z-index: 1;
+
+}
+
+.game_name {
+    width: 40vh;
+    height: 4vh;
+    font-family: Roboto;
+    font-style: bold;
+    font-weight: 150vh;
+    font-size: 3.1774051192vh;
+    line-height: 4vh;
+
+    display: flex;
+    align-items: center;
+    margin-left: 10vh;
+    margin-top: 3.5vh;
+    z-index: 1;
+}
+
+.game_sentence {
+    width: 46vh;
+    height: 6.1782877317vh;
+    font-family: Roboto;
+    font-style: bold;
+    font-weight: 150vh;
+    font-size: 2.6478375993vh;
+    line-height: 3.2vh;
+    letter-spacing:-0.1vh;
+    text-align: center;
+    color: #6B8588;
+
+    display: flex;
+    align-items: center;
+    margin-left: 1.7vh;
+    margin-top: 1.2vh;
+    z-index: 1;
+}
+
+.char {
+    margin-top: 3.2130626655vh;
+    margin-left: 25.5vh;
+    width: 14.57vh;
+    height: 20.3000882613vh;
+    z-index: 1;
+}
+
+.NPC_name {
+    position: absolute;
+    width: 20.3883495146vh;
+    height: 4.0600176523vh;
+    /*세로 가운데정렬*/
+    line-height: 4.0600176523vh;
+    background: linear-gradient(90deg, #FF7F09 0%, rgba(255, 239, 215, 0) 104.05%), #FFC800;
+    border-radius: 30px;
+    z-index: 1;
+    left: 22.8vh;
+    top: 48vh;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.6478375993vh;
+    z-index: 2;
+}
+
+.Quiz_div {
+    display: inline-block;
+    width: 50.7502206531vh;
+    height: 19.2113857017vh;
+    background: rgba(22, 22, 22, 0.47);
+    border-radius: 4.8543689320vh;
+    margin-bottom:0.5vh;
+    margin-left: 7.5vh;
+    /*text-align: center;*/
+    /*justify-content: center;*/
+    z-index: 1;
+}
+
+.quiz_content {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.9126213592vh;
+
+    color: white;
+
+    width: 23.8305383936vh;
+    height: 18.7113857017vh;
+
+    display: flex;
+    align-items: center;
+    margin-left: 13.8vh;
+    /*text-align: center;*/
+    z-index: 1;
+}
+
+.select {
+    display: flex;
+    top: 0;
+    margin-top: 2.6478375993vh;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.yes {
+    width: 21.5vh;
+    height: 21.5vh;
+    margin-right: 1vh;
+}
+
+.no {
+    width: 20.5vh;
+    height: 20.5vh;
+    margin-left: 1vh;
+}
+
+
+.quiz_result{
+    display: inline-block;
+    width: 44.4836716681vh;
+    height: 37.5110326567vh;
+    background: rgba(22, 22, 22, 0.47);
+    border-radius: 4.8543689320vh;
+    /*text-align: center;*/
+    /*justify-content: center;*/
+    margin-top: 5.6665489850vh;
+    z-index: 1;
+    margin-left: 10.5vh;
+
+}
+
+
+.result_mt {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.1vh;
+
+    color: white;
+
+    width: 26.4783759929vh;
+    height: 16.7696381289vh;
+
+    display: flex;
+    align-items: center;
+    margin-left: 14.2109443954vh;
+    text-align: center;
+}
+
+.result_content {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.9126213592vh;
+
+    color: white;
+
+    width: 30.8914386584vh;
+    height: 30.8914386584vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 6.9148278906vh;
+    /*text-align: center;*/
+}
+
+.star{
+position: absolute;
+width: 10.0617828773vh;
+height: 10.5913503972vh;
+left: 4.2vh;
+top: 6vh;
+}
+
+.next{
+position: absolute;
+top: 46vh;
+right: 1vh;
+width : 5.1782877317vh;
+height: 10.7265666372vh;
+}
