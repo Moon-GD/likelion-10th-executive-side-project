@@ -56,6 +56,24 @@
         </div>
       </div>
 
+      <div id="lastpop" style="display:none;" onclick="location.href='../index.html'">
+        <div id="poptext">
+          <div style="height:370px;">
+            <img id="img_comment" src="no.png" style="width:450px; margin-top:-15px;" alt="">
+            <div id="back_black" style="background_color:black"></div>
+          </div> 
+        </div>
+      </div>
+
+      <div id="lastpop2" style="display:none;" onclick="location.href='../index.html'">
+        <div id="poptext">
+          <div style="height:370px;">
+            <img id="img_comment" src="yes.png" style="width:450px; margin-top:-15px;" alt="">
+            <div id="back_black" style="background_color:black"></div>
+          </div> 
+        </div>
+      </div>
+
 
       <div id="button-st">
         <button id="A" type="button" class="btn btn-primary" style="margin-left: 25%; width: 50%; height: 100px; margin-top:2%; border-radius: 50px;">A</button>
@@ -277,34 +295,28 @@
             $("#five").show();
 
             $('#A').click(function() {
-              $('#pop').hide();
-              $('#pop2').show();
-              $('#pop2').click(function() {
-                $('#pop2').hide();
-                num++;
-                next();
+              $('#lastpop').hide();
+              $('#lastpop2').show();
+              $('#lastpop2').click(function() {
+                $('#lastpop2').hide();
                });
              });
          
             $('#B').click(function() {
-              $('#pop2').hide();
-              $('#pop').show();
-              $('#pop').click(function() {
-                $('#pop').hide();
-                $('#pop2').hide();
-                num++;
-                next();
+              $('#lastpop2').hide();
+              $('#lastpop').show();
+              $('#lastpop').click(function() {
+                $('#lastpop').hide();
+                $('#lastpop2').hide();
                });
               });
 
             $('#C').click(function() {
-              $('#pop2').hide();
-              $('#pop').show();
-              $('#pop').click(function() {
-                $('#pop').hide();
-                $('#pop2').hide();
-                num++;
-                next();
+              $('#lastpop2').hide();
+              $('#lastpop').show();
+              $('#lastpop').click(function() {
+                $('#lastpop').hide();
+                $('#lastpop2').hide();
                });
             });  
           
