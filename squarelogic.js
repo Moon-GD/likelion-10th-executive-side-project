@@ -1,3 +1,4 @@
+var score = 0;
 var lifeCount = 3;
 var globalIndex = 0;
 var row = 13;
@@ -114,6 +115,11 @@ answer[64] = 189;
 answer[65] = 192;
 answer[66] = 194;
 
+//이전 페이지 score 값 update
+if (localStorage.getItem("score")) {
+  score += localStorage.getItem("score");
+}
+
 //네모로직1 화면의 팝업창
 window.onload = function () {
   Swal.fire({
@@ -164,8 +170,9 @@ function checkSquare() {
         },
       });
       setTimeout(function () {
-        localStorage.setItem("score", 0); //실패로 값을 0으로 지정
+        localStorage.setItem("score", score); //실패
         location.href = "minju/index.html"; //에러 답 맞추기 링크 지정
+        console.log(score);
       }, 1000);
     }
   } else {
@@ -176,8 +183,10 @@ function checkSquare() {
       timer: 1500,
     });
     setTimeout(function () {
-      localStorage.setItem("score", 1); //성공으로 값을 1으로 지정
+      score += 3;
+      localStorage.setItem("score", score); //성공
       location.href = "minju/index.html"; //에러 답 맞추기 링크 지정
+      console.log(score);
     }, 1000);
   }
 }
@@ -192,8 +201,9 @@ function passSquare() {
     confirmButtonText: "Yes",
   }).then((result) => {
     if (result.isConfirmed) {
-      localStorage.setItem("score", 0); //패스로 값을 0으로 지정
+      localStorage.setItem("score", score); //패스
       location.href = "minju/index.html"; //에러 답 맞추기 링크 지정
+      console.log(score);
     }
   });
 }
