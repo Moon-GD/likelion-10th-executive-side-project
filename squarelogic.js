@@ -154,6 +154,7 @@ function checkSquare() {
       Swal.fire({
         title: "틀렸습니다!",
         text: "다음 게임으로 넘어갑니다.",
+        timer: 1000,
         showConfirmButton: false,
         showClass: {
           popup: "animate__animated animate__fadeInDown",
@@ -162,7 +163,10 @@ function checkSquare() {
           popup: "animate__animated animate__fadeOutUp",
         },
       });
-      location.href = "#";
+      setTimeout(function () {
+        localStorage.setItem("score", 0); //실패로 값을 0으로 지정
+        location.href = "minju/index.html"; //에러 답 맞추기 링크 지정
+      }, 1000);
     }
   } else {
     Swal.fire({
@@ -171,7 +175,10 @@ function checkSquare() {
       showConfirmButton: false,
       timer: 1500,
     });
-    location.href = "#";
+    setTimeout(function () {
+      localStorage.setItem("score", 1); //성공으로 값을 1으로 지정
+      location.href = "minju/index.html"; //에러 답 맞추기 링크 지정
+    }, 1000);
   }
 }
 
@@ -185,7 +192,8 @@ function passSquare() {
     confirmButtonText: "Yes",
   }).then((result) => {
     if (result.isConfirmed) {
-      location.href = "#";
+      localStorage.setItem("score", 0); //패스로 값을 0으로 지정
+      location.href = "minju/index.html"; //에러 답 맞추기 링크 지정
     }
   });
 }
