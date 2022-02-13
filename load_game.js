@@ -278,8 +278,9 @@
         if(correct) {
             setTimeout(()=>{
                 flag = true
-                alert('성공!!')
-                $('.content').fadeOut()
+                setTimeout(()=> {
+                    location.href = './result/index.html'
+                }, 700)
             }, 700)
         }
     }
@@ -369,9 +370,5 @@
 
     $('.reload-btn').click(()=>{
         window.location.reload()
-    })
-
-    $('.pass').click(()=>{
-        $('.content').fadeOut()
     })
 })()
