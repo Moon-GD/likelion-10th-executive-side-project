@@ -1,4 +1,18 @@
 ;(()=>{
+    var score = 0;
+    if (localStorage.getItem('score')) { score += localStorage.getItem('score') }
+    score = parseInt(score)
+
+    function getCalc() {
+        alert(score)
+        if(score >= 7) {
+            location.href = './result/index.html'
+        }    
+        else if(score < 7) {
+            location.href = './result/result.html'
+        }
+    }
+
     let order = ['#FIRST', '#SECOND', '#THIRD', '#FOURTH', '#FIFTH']
     let font_order = ['#FIRST-SPLASH', '#SECOND-SPLASH', '#THIRD-SPLASH', '#FOURTH-SPLASH', '#FIFTH-SPLASH']
 
@@ -279,7 +293,8 @@
             setTimeout(()=>{
                 flag = true
                 setTimeout(()=> {
-                    location.href = './result/index.html'
+                    score += 3
+                    getCalc()
                 }, 700)
             }, 700)
         }
@@ -370,5 +385,9 @@
 
     $('.reload-btn').click(()=>{
         window.location.reload()
+    })
+
+    $('.pass-a').click(() => {
+        getCalc()
     })
 })()
