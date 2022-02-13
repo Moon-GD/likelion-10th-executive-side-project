@@ -101,6 +101,7 @@
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
   <script>
+    var score = 0;
     var num = 1;
     var q = {
       1: { "title": "", "type": "EI", "A": "#include <stdio.h> 추가", "B": "파일이나 폴더명 다시 확인하기", "C": "명령어 뒤 세미콜론 (;) 붙이기" },
@@ -158,6 +159,7 @@
             $('#pop2').show();
             $('#pop2').click(function () {
               $('#pop2').hide();
+              score++;
               num++;
               next();
             });
@@ -183,6 +185,7 @@
             $('#pop2').show();
             $('#pop2').click(function () {
               $('#pop2').hide();
+              score++;
               num++;
               next();
             });
@@ -225,6 +228,7 @@
             $('#pop').click(function () {
               $('#pop').hide();
               $('#pop2').hide();
+              score++;
               num++;
               next();
             });
@@ -265,6 +269,7 @@
             $('#pop2').show();
             $('#pop2').click(function () {
               $('#pop2').hide();
+              score++;
               num++;
               next();
             });
@@ -305,6 +310,7 @@
               $('#lastpop2').show();
               $('#lastpop2').click(function() {
                 $('#lastpop2').hide();
+                score++;
                });
              });
          
