@@ -4,7 +4,6 @@
     score = parseInt(score)
 
     function getCalc() {
-        alert(score)
         if(score >= 7) {
             location.href = './result/index.html'
         }    
