@@ -9,70 +9,91 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript">
 
+    let score = 0;
+
         function dis(){
+            score += 1;
             $('#dis').hide();
             $('#ans').show();
+            console.log(score);
         }
 
         function no(){
             $('#dis').hide();
             $('#not_ans').show();
+            console.log(score);
         }
 
         function dis2(){
             $('#ans').hide();
             $('#dis2').show();
+            console.log(score);
         }
 
         function dis2_no(){
             $('#not_ans').hide();
             $('#dis2').show();
+            console.log(score);
         }
 
         function yes2(){
+            score += 1;
             $('#dis2').hide();
             $('#ans2').show();
+            console.log(score);
         }
 
 
         function no2(){
             $('#dis2').hide();
             $('#not_ans2').show();
+            console.log(score);
         }
 
         function dis3_yes(){
             $('#ans2').hide();
             $('#dis3').show();
+            console.log(score);
         }
 
         function dis3_no(){
             $('#not_ans2').hide();
             $('#dis3').show();
+            console.log(score);
         }
 
         function yes3(){
+            score += 1;
             $('#dis3').hide();
             $('#ans3').show();
+            console.log(score);
         }
 
 
         function no3(){
             $('#dis3').hide();
             $('#not_ans3').show();
+            console.log(score);
         }
 
 
 
-
-
+        function link(){
+        localStorage.setItem('score',score);
+        location.href='./squarelogicMain.html';
+        }
 
 
 
     </script>
 </head>
 <body>
+
+<div class="dim"></div>
 <!--백그라운드 컨테이너-->
 <div class="mainBox">
+
+
     <!--    1번-->
     <div id="dis" class="content">
         <div class="dim"></div>
@@ -310,7 +331,7 @@
 
         </div>
 
-        <img class="next" src="./assets/Polygon 2.png" onclick="location.href='./squarelogicMain.html'">
+        <img class="next" src="./assets/Polygon 2.png" onclick="link()">
     </div>
 
     <!--틀린답-->
@@ -341,7 +362,7 @@
             <img class="no" src="./assets/No.png">
         </div>
 
-        <img class="next" src="./assets/Polygon 2.png" onclick="location.href='./squarelogicMain.html'">
+        <img class="next" src="./assets/Polygon 2.png" onclick="link()">
     </div>
 
 </div>
