@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header {
+    display: inline-block;
+    background-color: #000000;
+    height: 5vh;
+    width: 100%; /*배경 가로사이즈에 맞추기위함 */
+  }
+  
+  body {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+  }
+  
+  #log {
+    width: auto;
+    height: 100%;
+    display: block;
+  }
+  
+  .mainBox {
+    display: inline-block;
+    height: 100vh;
+    width: 57.666372462vh;
+    margin: 0;
+    background-image: url("../image/intro_document_background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .titleBox {
+    height: 15vh;
+  }
+  
+  .title {
+    width: 65%;
+    height: 11vh;
+  }
+  
+  .charBox {
+    padding-top:14vh;
+  }
+  
+  .character {
+    width: 65%;
+    height: 18vh;
+  }
+  
+  .textContainer {
+    display: inline-block;
+    margin: 0;
+    background-image: url("../image/intro_youngkyung_box.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 4vh;
+    width: 53.5vh;
+    height: 33.5vh;
+    text-align: left;
+  }
+  
+  .textBox {
+    margin-top: 14vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .text {
+    font-family: Roboto;
+    font-size: 100%;
+    width: 73%;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-left: 5vh;
+    margin-top: 1vh;
+  } 
+  
+  .text img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .btn {
+    display: block;
+    width: 5.3vh;
+    height: 5.3vh;
+    margin-left: 1vh;
+  }
+  
+  .btn img {
+    width: 100%;
+    height: auto;
+  }
