@@ -1,60 +1,60 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="container">
-  
-    <article class="ready">
-      <div class="r-wrap">
-        <div class="r-img"><img id="back_img" class="" style="margin-top: 20%; margin-left: 12%; width:80%" src="back.png" alt="" onclick="ready();"></div>
-      </div>
-    </article>
 
-    <article class="question" style="padding-top:">
-     
-      <div class="progress mt-5" style="">
-        <div class="progress-bar" role="progressbar"></div>
-      </div>
-      
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport"
+    content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-      <input id="type" type="hidden" value="EI">
-     
-      <div id="one"><img class="mt-5" style="margin-left: 30%; width:450px; height:400px;" src="Q1.png" alt=""></div>
-      <div id="two"><img class="mt-5" style="margin-left: 30%; width:450px; height:400px;" src="Q2.png" alt=""></div>
-      <div id="three"><img class="mt-5" style="margin-left: 30%; width:450px; height:400px;" src="Q3.png" alt=""></div>
-      <div id="four"><img class="mt-5" style="margin-left: 30%; width:450px; height:400px;" src="Q4.png" alt=""></div>
-      <div id="five"><img class="mt-5" style="margin-left: 30%; width:450px; height:400px;" src="Q5.png" alt=""></div>
-    
+<body class="container">
 
-      <div id="pop" style="display:none;">
-        <div id="poptext">
-          <div style="height:370px;">
-            <img id="img_comment" src="no.png" style="width:450px; margin-top:-15px;" alt="">
-            <div id="back_black" style="background_color:black"></div>
-          </div> 
+  <article class="ready">
+    <div class="r-wrap">
+      <div class="r-img"><img id="back_img" class="" style="margin-top: 20%; margin-left: 12%; width:80%" src="back.png"
+          alt="" onclick="ready();"></div>
+    </div>
+  </article>
+
+  <article class="question" style="padding-top:">
+
+    <div class="progress mt-5" style="">
+      <div class="progress-bar" role="progressbar"></div>
+    </div>
+
+
+    <input id="type" type="hidden" value="EI">
+
+    <div id="one"><img class="mt-5" style="margin-left: 30%; width:450px; height:400px;" src="Q1.png" alt=""></div>
+    <div id="two"><img class="mt-5" style="margin-left: 30%; width:450px; height:400px;" src="Q2.png" alt=""></div>
+    <div id="three"><img class="mt-5" style="margin-left: 30%; width:450px; height:400px;" src="Q3.png" alt=""></div>
+    <div id="four"><img class="mt-5" style="margin-left: 30%; width:450px; height:400px;" src="Q4.png" alt=""></div>
+    <div id="five"><img class="mt-5" style="margin-left: 30%; width:450px; height:400px;" src="Q5.png" alt=""></div>
+
+
+    <div id="pop" style="display:none;">
+      <div id="poptext">
+        <div style="height:370px;">
+          <img id="img_comment" src="no.png" style="width:450px; margin-top:-15px;" alt="">
+          <div id="back_black" style="background_color:black"></div>
         </div>
       </div>
+    </div>
 
-      <div id="pop2" style="display:none;">
-        <div id="poptext">
-          <div style="height:370px;">
-            <img id="img_comment" src="yes.png" style="width:450px; margin-top:-15px;" alt="">
-            <div id="back_black" style="background_color:black"></div>
-          </div> 
+    <div id="pop2" style="display:none;">
+      <div id="poptext">
+        <div style="height:370px;">
+          <img id="img_comment" src="yes.png" style="width:450px; margin-top:-15px;" alt="">
+          <div id="back_black" style="background_color:black"></div>
         </div>
       </div>
+    </div>
 
       <div id="lastpop" style="display:none;" onclick="location.href='../index.html'">
         <div id="poptext">
@@ -75,208 +75,240 @@
       </div>
 
 
-      <div id="button-st">
-        <button id="A" type="button" class="btn btn-primary" style="margin-left: 25%; width: 50%; height: 100px; margin-top:2%; border-radius: 50px;">A</button>
-        <button id="B" type="button" class="btn btn-success" style="margin-left: 25%; width: 50%; height: 100px; margin-top:2%; border-radius: 50px;">B</button>
-        <button id="C" type="button" class="btn btn-warning" style="margin-left: 25%; width: 50%; height: 100px; margin-top:2%; border-radius: 50px;">C</button>
-      </div>
-    </article>
-   
-    <article class="result">
-      <img id="img" class="mt-5" src="dog.png" alt="">
-      <h2 id="animal" class="text-center mt-5">동물이름</h2>
-      <h3 id="explain" class="text-center mt-5">설명</h3>
-    </article>
-    <input type="hidden" id="EI" value="0">
-    <input type="hidden" id="SN" value="0">
-    <input type="hidden" id="TF" value="0">
-    <input type="hidden" id="JP" value="0">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" ></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script>
+    <div id="button-st">
+      <button id="A" type="button" class="btn btn-primary"
+        style="margin-left: 25%; width: 50%; height: 100px; margin-top:2%; border-radius: 50px;">A</button>
+      <button id="B" type="button" class="btn btn-success"
+        style="margin-left: 25%; width: 50%; height: 100px; margin-top:2%; border-radius: 50px;">B</button>
+      <button id="C" type="button" class="btn btn-warning"
+        style="margin-left: 25%; width: 50%; height: 100px; margin-top:2%; border-radius: 50px;">C</button>
+    </div>
+  </article>
 
-      var num = 1;
-      var q = {
-        1: {"title":"", "type":"EI", "A" : "#include <stdio.h> 추가", "B":"파일이나 폴더명 다시 확인하기", "C":"명령어 뒤 세미콜론 (;) 붙이기"},
+  <article class="result">
+    <img id="img" class="mt-5" src="dog.png" alt="">
+    <h2 id="animal" class="text-center mt-5">동물이름</h2>
+    <h3 id="explain" class="text-center mt-5">설명</h3>
+  </article>
+  <input type="hidden" id="EI" value="0">
+  <input type="hidden" id="SN" value="0">
+  <input type="hidden" id="TF" value="0">
+  <input type="hidden" id="JP" value="0">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <script>
+    if (localStorage.getItem('score')) { var score = localStorage.getItem('score') }
+    alert(scoreData); //값 넘어오는지 확인하려고 둠 ( 성공시 1, 실패시 0)
 
-        2: {"title":"", "type":"EI", "A":"print()", "B":"say()", "C":"text()"},
+    var num = 1;
+    var q = {
+      1: { "title": "", "type": "EI", "A": "#include <stdio.h> 추가", "B": "파일이나 폴더명 다시 확인하기", "C": "명령어 뒤 세미콜론 (;) 붙이기" },
 
-        3: {"title":"", "type":"EI", "A":"Ctrl+A", "B":"Ctrl+E", "C":"Ctrl+S"},
+      2: { "title": "", "type": "EI", "A": "print()", "B": "say()", "C": "text()" },
 
-        4: {"title":"", "type":"EI", "A":"8", "B":"3+5", "C":"35"},
+      3: { "title": "", "type": "EI", "A": "Ctrl+A", "B": "Ctrl+E", "C": "Ctrl+S" },
 
-        5: {"title":"", "type":"EI", "A":"a = 1 + 'abc'", "B":"a = 90/0", "C":"a = null"}
-      }
-      var result = {
-        "ISTJ": {"animal": "강아지", "explain": "강아지 설명", "img": "dog.png"},
-        "ENFP": {"animal": "병아리", "explain": "병아리 설명", "img": "dog.png"},
-        "ENTJ": {"animal": "고양이", "explain": "고양이 설명", "img": "dog.png"}
-      }
-      function ready() {
-        $(".ready").hide();
-        start();
-      }
-      function start() {
-        $(".question").show();
-        next();
-      }
+      4: { "title": "", "type": "EI", "A": "8", "B": "3+5", "C": "35" },
 
-      function next() {
-        $(".progress-bar").attr('style','width: calc(100/5*'+num+'%)');
-        $("#title").html(q[num]["title"]);
-        $("#type").val(q[num]["type"]);
-        $("#A").html(q[num]["A"]);
-        $("#B").html(q[num]["B"]);
-        $("#C").html(q[num]["C"]);
+      5: { "title": "", "type": "EI", "A": "a = 1 + 'abc'", "B": "a = 90/0", "C": "a = null" }
+    }
+    var result = {
+      "ISTJ": { "animal": "강아지", "explain": "강아지 설명", "img": "dog.png" },
+      "ENFP": { "animal": "병아리", "explain": "병아리 설명", "img": "dog.png" },
+      "ENTJ": { "animal": "고양이", "explain": "고양이 설명", "img": "dog.png" }
+    }
+    function ready() {
+      $(".ready").hide();
+      start();
+    }
+    function start() {
+      $(".question").show();
+      next();
+    }
 
-        switch (num) {
-          case 1:
-            $("#one").show();
-            $("#two").hide();
-            $("#three").hide();
-            $("#four").hide();
-            $("#five").hide();
-            
-              $('#A').click(function() {
-               $('#pop').show();
-               $('#pop').click(function() {
-                $('#pop').hide();
-                $('#pop2').hide();
-                num++;
-                next();
-               });
-              });
+    function next() {
+      $(".progress-bar").attr('style', 'width: calc(100/5*' + num + '%)');
+      $("#title").html(q[num]["title"]);
+      $("#type").val(q[num]["type"]);
+      $("#A").html(q[num]["A"]);
+      $("#B").html(q[num]["B"]);
+      $("#C").html(q[num]["C"]);
 
-              $('#B').click(function() {
-                $('#pop').hide();
-                $('#pop2').show();
-                $('#pop2').click(function() {
-                  $('#pop2').hide();
-                  num++;
-                  next();
-                 });
-               });
-          
-              $('#C').click(function() {
-                $('#pop').show();
-                $('#pop').click(function() {
-                  $('#pop').hide();
-                  $('#pop2').hide();
-                  num++;
-                  next();
-                 });
-               });
+      switch (num) {
+        case 1:
+          $("#one").show();
+          $("#two").hide();
+          $("#three").hide();
+          $("#four").hide();
+          $("#five").hide();
 
-            break;
-          case 2:
-            $("#one").hide();
-            $("#two").show();
-
-              $('#A').click(function() {
-                $('#pop').hide();
-                $('#pop2').show();
-                $('#pop2').click(function() {
-                  $('#pop2').hide();
-                  num++;
-                  next();
-                 });
-              });
-
-              $('#B').click(function() {
-               $('#pop2').hide();
-               $('#pop').show();
-               $('#pop').click(function() {
-                $('#pop').hide();
-                $('#pop2').hide();
-                num++;
-                next();
-               });
-              });
-          
-              $('#C').click(function() {
-                $('#pop2').hide();
-                $('#pop').show();
-                $('#pop').click(function() {
-                  $('#pop').hide();
-                  $('#pop2').hide();
-                  num++;
-                  next();
-                 });
-               });
-           
-              $('#close').click(function() {
-                $('#pop').hide();
-              });
-
-            break;
-          case 3:
-            $("#two").hide();
-            $("#three").show();
-
-            $('#A').click(function() {
-              $('#pop2').hide();
-              $('#pop').show();
-              $('#pop').click(function() {
-                $('#pop').hide();
-                $('#pop2').hide();
-                num++;
-                next();
-               });
-            });
-
-            $('#B').click(function() {
-            $('#pop2').hide();
-             $('#pop').show();
-             $('#pop').click(function() {
+          $('#A').click(function () {
+            $('#pop').show();
+            $('#pop').click(function () {
               $('#pop').hide();
               $('#pop2').hide();
               num++;
               next();
-             });
             });
-        
-            $('#C').click(function() {
-              $('#pop').hide();
-              $('#pop2').show();
-              $('#pop2').click(function() {
-                $('#pop2').hide();
-                num++;
-                next();
-               });
-             });
-         
-            $('#close').click(function() {
-              $('#pop').hide();
+          });
+
+          $('#B').click(function () {
+            $('#pop').hide();
+            $('#pop2').show();
+            $('#pop2').click(function () {
+              $('#pop2').hide();
+              num++;
+              next();
             });
+          });
 
-            break;
-          case 4:
-            $("#three").hide();
-            $("#four").show();
-
-            $('#A').click(function() {
+          $('#C').click(function () {
+            $('#pop').show();
+            $('#pop').click(function () {
               $('#pop').hide();
-                $('#pop2').show();
-                $('#pop2').click(function() {
-                  $('#pop2').hide();
-                  num++;
-                  next();
-                 });
-             });
-         
-            $('#B').click(function() {
               $('#pop2').hide();
-              $('#pop').show();
-              $('#pop').click(function() {
-                $('#pop').hide();
-                $('#pop2').hide();
-                num++;
-                next();
-               });
-              });
+              num++;
+              next();
+            });
+          });
 
-            $('#C').click(function() {
+          break;
+        case 2:
+          $("#one").hide();
+          $("#two").show();
+
+          $('#A').click(function () {
+            $('#pop').hide();
+            $('#pop2').show();
+            $('#pop2').click(function () {
               $('#pop2').hide();
+              num++;
+              next();
+            });
+          });
+
+          $('#B').click(function () {
+            $('#pop2').hide();
+            $('#pop').show();
+            $('#pop').click(function () {
+              $('#pop').hide();
+              $('#pop2').hide();
+              num++;
+              next();
+            });
+          });
+
+          $('#C').click(function () {
+            $('#pop2').hide();
+            $('#pop').show();
+            $('#pop').click(function () {
+              $('#pop').hide();
+              $('#pop2').hide();
+              num++;
+              next();
+            });
+          });
+
+          $('#close').click(function () {
+            $('#pop').hide();
+          });
+
+          break;
+        case 3:
+          $("#two").hide();
+          $("#three").show();
+
+          $('#A').click(function () {
+            $('#pop2').hide();
+            $('#pop').show();
+            $('#pop').click(function () {
+              $('#pop').hide();
+              $('#pop2').hide();
+              num++;
+              next();
+            });
+          });
+
+          $('#B').click(function () {
+            $('#pop2').hide();
+            $('#pop').show();
+            $('#pop').click(function () {
+              $('#pop').hide();
+              $('#pop2').hide();
+              num++;
+              next();
+            });
+          });
+
+          $('#C').click(function () {
+            $('#pop').hide();
+            $('#pop2').show();
+            $('#pop2').click(function () {
+              $('#pop2').hide();
+              num++;
+              next();
+            });
+          });
+
+          $('#close').click(function () {
+            $('#pop').hide();
+          });
+
+          break;
+        case 4:
+          $("#three").hide();
+          $("#four").show();
+
+          $('#A').click(function () {
+            $('#pop').hide();
+            $('#pop2').show();
+            $('#pop2').click(function () {
+              $('#pop2').hide();
+              num++;
+              next();
+            });
+          });
+
+          $('#B').click(function () {
+            $('#pop2').hide();
+            $('#pop').show();
+            $('#pop').click(function () {
+              $('#pop').hide();
+              $('#pop2').hide();
+              num++;
+              next();
+            });
+          });
+
+          $('#C').click(function () {
+            $('#pop2').hide();
+            $('#pop').show();
+            $('#pop').click(function () {
+              $('#pop').hide();
+              $('#pop2').hide();
+              num++;
+              next();
+            });
+          });
+
+          $('#close').click(function () {
+            $('#pop').hide();
+          });
+          break;
+        case 5:
+          $("#four").hide();
+          $("#five").show();
+
+          $('#A').click(function () {
+            $('#pop').hide();
+            $('#pop2').show();
+            $('#pop2').click(function () {
+              $('#pop2').hide();
+<<<<<<< HEAD
               $('#pop').show();
               $('#pop').click(function() {
                 $('#pop').hide();
@@ -329,11 +361,50 @@
         }
         
       
+=======
+              num++;
+              next();
+            });
+          });
+
+          $('#B').click(function () {
+            $('#pop2').hide();
+            $('#pop').show();
+            $('#pop').click(function () {
+              $('#pop').hide();
+              $('#pop2').hide();
+              num++;
+              next();
+            });
+          });
+
+          $('#C').click(function () {
+            $('#pop2').hide();
+            $('#pop').show();
+            $('#pop').click(function () {
+              $('#pop').hide();
+              $('#pop2').hide();
+              num++;
+              next();
+            });
+          });
+
+          $('#close').click(function () {
+            $('#pop').hide();
+          });
+          break;
+        default:
+          alert("어떤 값인지 파악이 되지 않습니다.");
+>>>>>>> 1ac23546911374535effced5685e0fc322ec2bb8
       }
 
 
-      
-    </script>
+    }
+
+
+
+  </script>
   </div>
-  </body>
+</body>
+
 </html>

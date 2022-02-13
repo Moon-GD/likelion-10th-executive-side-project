@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="oxquiz.css">
+    <title>Title</title>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+
+        function dis(){
+            $('#dis').hide();
+            $('#ans').show();
+        }
+
+        function no(){
+            $('#dis').hide();
+            $('#not_ans').show();
+        }
+
+        function dis2(){
+            $('#ans').hide();
+            $('#dis2').show();
+        }
+
+        function dis2_no(){
+            $('#not_ans').hide();
+            $('#dis2').show();
+        }
+
+        function yes2(){
+            $('#dis2').hide();
+            $('#ans2').show();
+        }
+
+
+        function no2(){
+            $('#dis2').hide();
+            $('#not_ans2').show();
+        }
+
+        function dis3_yes(){
+            $('#ans2').hide();
+            $('#dis3').show();
+        }
+
+        function dis3_no(){
+            $('#not_ans2').hide();
+            $('#dis3').show();
+        }
+
+        function yes3(){
+            $('#dis3').hide();
+            $('#ans3').show();
+        }
+
+
+        function no3(){
+            $('#dis3').hide();
+            $('#not_ans3').show();
+        }
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+<!--백그라운드 컨테이너-->
+<div class="mainBox">
+    <!--    1번-->
+    <div id="dis" class="content">
+        <div class="dim"></div>
+        <div class="lion_header"></div>
+        <!--        게임 설명-->
+        <div class="game_info">
+            <img class="star" src="./assets/star.png">
+            <div class="game_name">NPC의 기억을 찾아라</div>
+            <div class="game_sentence">운영진 NPC의 정보를 OX 퀴즈를 통해 찾아주세요!</div>
+        </div>
+
+        <!--        캐릭터-->
+        <img class="char" src="./assets/duckstand.png">
+        <div class="NPC_name">지송 NPC</div>
+        <div class="Quiz_div">
+            <div class="quiz_content">
+                <div id="quote">나는 경북대학교 심화컴퓨터전공에 다녔을거야</div>
+            </div>
+        </div>
+
+        <!--        버튼-->
+        <div class="select">
+            <img class="yes" src="./assets/Yes.png" onClick="dis()">
+            <img class="no" src="./assets/No.png" onClick="no()">
+        </div>
+
+        <img class="next" src="./assets/Polygon 2.png">
+
+    </div>
+
+    <!--맞춘답-->
+    <div id='ans' class="content" style="display:none;">
+        <div class="dim"></div>
+        <div class="lion_header"></div>
+
+        <div class="game_info">
+            <img class="star" src="./assets/star.png">
+            <div class="game_name">NPC의 기억을 찾아라</div>
+            <div class="game_sentence">운영진 NPC의 정보를 OX 퀴즈를 통해 찾아주세요!</div>
+        </div>
+
+
+        <div class="quiz_result">
+            <div class="result_mt">
+                <div>맞았습니다!</div>
+            </div>
+            <div class="result_content">
+                <div style="margin-bottom:20px;">정답 : O</div>
+                <div>지송 NPC는</div>
+                <div> 컴학 심컴 20학번이죠</div>
+            </div>
+        </div>
+        <div class="select">
+            <img class="yes" src="./assets/Yes.png">
+            <img class="no" src="./assets/No.png">
+
+        </div>
+
+        <img class="next" src="./assets/Polygon 2.png" onclick="dis2()">
+    </div>
+
+    <!--틀린답-->
+    <div id='not_ans' class="content" style="display:none;">
+        <div class="dim"></div>
+        <div class="lion_header"></div>
+
+        <div class="game_info">
+            <img class="star" src="./assets/star.png">
+            <div class="game_name">NPC의 기억을 찾아라</div>
+            <div class="game_sentence">운영진 NPC의 정보를 OX 퀴즈를 통해 찾아주세요!</div>
+        </div>
+
+        <div class="quiz_result">
+            <div class="result_mt">
+                <div>틀렸습니다!</div>
+            </div>
+        </div>
+        <div class="select">
+            <img class="yes" src="./assets/Yes.png">
+            <img class="no" src="./assets/No.png">
+        </div>
+
+        <img class="next" src="./assets/Polygon 2.png" onclick="dis2_no()">
+    </div>
+
+
+        <!--    2번-->
+    <div id="dis2" class="content" style="display:none;">
+        <div class="dim"></div>
+        <div class="lion_header"></div>
+        <!--        게임 설명-->
+        <div class="game_info">
+            <img class="star" src="./assets/star.png">
+            <div class="game_name">NPC의 기억을 찾아라</div>
+            <div class="game_sentence">운영진 NPC의 정보를 OX 퀴즈를 통해 찾아주세요!</div>
+        </div>
+
+        <!--        캐릭터-->
+        <img class="char" src="./assets/duckstand.png">
+        <div class="NPC_name">지송 NPC</div>
+        <div class="Quiz_div">
+            <div class="quiz_content">
+                <div>이건 두번째 문제입니다</div>
+            </div>
+        </div>
+
+        <!--        버튼-->
+        <div class="select">
+            <img class="yes" src="./assets/Yes.png" onClick="yes2()">
+            <img class="no" src="./assets/No.png" onClick="no2()">
+        </div>
+
+        <img class="next" src="./assets/Polygon 2.png">
+
+    </div>
+
+    <!--맞춘답-->
+    <div id='ans2' class="content" style="display:none;">
+        <div class="dim"></div>
+        <div class="lion_header"></div>
+
+        <div class="game_info">
+            <img class="star" src="./assets/star.png">
+            <div class="game_name">NPC의 기억을 찾아라</div>
+            <div class="game_sentence">운영진 NPC의 정보를 OX 퀴즈를 통해 찾아주세요!</div>
+        </div>
+
+
+        <div class="quiz_result">
+            <div class="result_mt">
+                <div>맞았습니다!</div>
+            </div>
+            <div class="result_content">
+                <div style="margin-bottom:20px;">정답 : O</div>
+                <div>이것은 두번째 문제가</div>
+                <div> 맞습니다!</div>
+            </div>
+        </div>
+        <div class="select">
+            <img class="yes" src="./assets/Yes.png">
+            <img class="no" src="./assets/No.png">
+
+        </div>
+
+        <img class="next" src="./assets/Polygon 2.png" onclick="dis3_yes()">
+    </div>
+
+    <!--틀린답-->
+    <div id='not_ans2' class="content" style="display:none;">
+        <div class="dim"></div>
+        <div class="lion_header"></div>
+
+        <div class="game_info">
+            <img class="star" src="./assets/star.png">
+            <div class="game_name">NPC의 기억을 찾아라</div>
+            <div class="game_sentence">운영진 NPC의 정보를 OX 퀴즈를 통해 찾아주세요!</div>
+        </div>
+
+        <div class="quiz_result">
+            <div class="result_mt">
+                <div>틀렸습니다!</div>
+            </div>
+
+            <div class="result_content">
+                <div style="margin-bottom:20px;">정답 : O</div>
+                <div>이것은 두번째 문제가</div>
+                <div> 아닙니다!</div>
+            </div>
+
+        </div>
+        <div class="select">
+            <img class="yes" src="./assets/Yes.png">
+            <img class="no" src="./assets/No.png">
+        </div>
+
+        <img class="next" src="./assets/Polygon 2.png" onclick="dis3_no()">
+    </div>
+
+
+            <!--    3번-->
+    <div id="dis3" class="content" style="display:none;">
+        <div class="dim"></div>
+        <div class="lion_header"></div>
+        <!--        게임 설명-->
+        <div class="game_info">
+            <img class="star" src="./assets/star.png">
+            <div class="game_name">NPC의 기억을 찾아라</div>
+            <div class="game_sentence">운영진 NPC의 정보를 OX 퀴즈를 통해 찾아주세요!</div>
+        </div>
+
+        <!--        캐릭터-->
+        <img class="char" src="./assets/duckstand.png">
+        <div class="NPC_name">지송 NPC</div>
+        <div class="Quiz_div">
+            <div class="quiz_content">
+                <div>이건 세번째 문제입니다</div>
+            </div>
+        </div>
+
+        <!--        버튼-->
+        <div class="select">
+            <img class="yes" src="./assets/Yes.png" onClick="yes3()">
+            <img class="no" src="./assets/No.png" onClick="no3()">
+        </div>
+
+        <img class="next" src="./assets/Polygon 2.png">
+
+    </div>
+
+    <!--맞춘답-->
+    <div id='ans3' class="content" style="display:none;">
+        <div class="dim"></div>
+        <div class="lion_header"></div>
+
+        <div class="game_info">
+            <img class="star" src="./assets/star.png">
+            <div class="game_name">NPC의 기억을 찾아라</div>
+            <div class="game_sentence">운영진 NPC의 정보를 OX 퀴즈를 통해 찾아주세요!</div>
+        </div>
+
+
+        <div class="quiz_result">
+            <div class="result_mt">
+                <div>맞았습니다!</div>
+            </div>
+            <div class="result_content">
+                <div style="margin-bottom:20px;">정답 : O</div>
+                <div>이것은 세번째 문제가</div>
+                <div> 맞습니다!</div>
+            </div>
+        </div>
+        <div class="select">
+            <img class="yes" src="./assets/Yes.png">
+            <img class="no" src="./assets/No.png">
+
+        </div>
+
+        <img class="next" src="./assets/Polygon 2.png" onclick="location.href='./squarelogicMain.html'">
+    </div>
+
+    <!--틀린답-->
+    <div id='not_ans3' class="content" style="display:none;">
+        <div class="dim"></div>
+        <div class="lion_header"></div>
+
+        <div class="game_info">
+            <img class="star" src="./assets/star.png">
+            <div class="game_name">NPC의 기억을 찾아라</div>
+            <div class="game_sentence">운영진 NPC의 정보를 OX 퀴즈를 통해 찾아주세요!</div>
+        </div>
+
+        <div class="quiz_result">
+            <div class="result_mt">
+                <div>틀렸습니다!</div>
+            </div>
+
+            <div class="result_content">
+                <div style="margin-bottom:20px;">정답 : O</div>
+                <div>이것은 세번째 문제가</div>
+                <div> 아닙니다!</div>
+            </div>
+
+        </div>
+        <div class="select">
+            <img class="yes" src="./assets/Yes.png">
+            <img class="no" src="./assets/No.png">
+        </div>
+
+        <img class="next" src="./assets/Polygon 2.png" onclick="location.href='./squarelogicMain.html'">
+    </div>
+
+</div>
+
+
+</body>
+</html>
