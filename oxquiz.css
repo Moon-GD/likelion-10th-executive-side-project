@@ -12,6 +12,12 @@ body {
   border: 0;
   font-size: 100%;
   font: inherit;
+
+  height: 100vh;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(minju/wallpaper.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 
