@@ -101,9 +101,6 @@
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
   <script>
-    if (localStorage.getItem('score')) { var score = localStorage.getItem('score') }
-    alert(scoreData); //값 넘어오는지 확인하려고 둠 ( 성공시 1, 실패시 0)
-
     var num = 1;
     var q = {
       1: { "title": "", "type": "EI", "A": "#include <stdio.h> 추가", "B": "파일이나 폴더명 다시 확인하기", "C": "명령어 뒤 세미콜론 (;) 붙이기" },
@@ -299,30 +296,7 @@
             $('#pop').hide();
           });
           break;
-        case 5:
-          $("#four").hide();
-          $("#five").show();
-
-          $('#A').click(function () {
-            $('#pop').hide();
-            $('#pop2').show();
-            $('#pop2').click(function () {
-              $('#pop2').hide();
-<<<<<<< HEAD
-              $('#pop').show();
-              $('#pop').click(function() {
-                $('#pop').hide();
-                $('#pop2').hide();
-                num++;
-                next();
-               });
-            });  
-          
-             $('#close').click(function() {
-               $('#pop').hide();
-             });
-            break;
-          case 5:
+         case 5:
             $("#four").hide();
             $("#five").show();
 
@@ -359,49 +333,8 @@
           default:
             alert( "어떤 값인지 파악이 되지 않습니다." );
         }
-        
-      
-=======
-              num++;
-              next();
-            });
-          });
-
-          $('#B').click(function () {
-            $('#pop2').hide();
-            $('#pop').show();
-            $('#pop').click(function () {
-              $('#pop').hide();
-              $('#pop2').hide();
-              num++;
-              next();
-            });
-          });
-
-          $('#C').click(function () {
-            $('#pop2').hide();
-            $('#pop').show();
-            $('#pop').click(function () {
-              $('#pop').hide();
-              $('#pop2').hide();
-              num++;
-              next();
-            });
-          });
-
-          $('#close').click(function () {
-            $('#pop').hide();
-          });
-          break;
-        default:
-          alert("어떤 값인지 파악이 되지 않습니다.");
->>>>>>> 1ac23546911374535effced5685e0fc322ec2bb8
-      }
-
 
     }
-
-
 
   </script>
   </div>
