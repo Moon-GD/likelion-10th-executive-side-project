@@ -54,21 +54,3 @@ article {
   color:rgb(255, 255, 255);
 }
 
-.ques4 {
-  background-color: rgba(63, 63, 63, 0.705);
-  border-width: 1px;
-  border-color: rgba(63, 63, 63, 0.705);
-  border-style: solid;
-  width: 300px;
-  border-radius: 5px;
-  font-size: 17px;
-  font-style: italic;
-  font-family: 'Baloo Bhaijaan 2', cursive;
-  color: rgb(129, 128, 128);
-  text-decoration:line-through;
-  margin: 0 auto;
-}
-
-.ques4:hover {
-  background-color: rgba(175, 156, 156, 0.274);
-}
