@@ -56,23 +56,23 @@
       </div>
     </div>
 
-    <div id="lastpop" style="display:none;" onclick="scoreCal()">
-      <div id="poptext">
-        <div style="height:370px;">
-          <img id="img_comment" src="no.png" style="width:450px; margin-top:-15px;" alt="">
-          <div id="back_black" style="background_color:black"></div>
+      <div id="lastpop" style="display:none;" onclick="location.href='../load_info.html'">
+        <div id="poptext">
+          <div style="height:370px;">
+            <img id="img_comment" src="no.png" style="width:450px; margin-top:-15px;" alt="">
+            <div id="back_black" style="background_color:black"></div>
+          </div> 
         </div>
       </div>
-    </div>
 
-    <div id="lastpop2" style="display:none;" onclick="scoreCal()">
-      <div id="poptext">
-        <div style="height:370px;">
-          <img id="img_comment" src="yes.png" style="width:450px; margin-top:-15px;" alt="">
-          <div id="back_black" style="background_color:black"></div>
+      <div id="lastpop2" style="display:none;" onclick="location.href='../load_info.html'">
+        <div id="poptext">
+          <div style="height:370px;">
+            <img id="img_comment" src="yes.png" style="width:450px; margin-top:-15px;" alt="">
+            <div id="back_black" style="background_color:black"></div>
+          </div> 
         </div>
       </div>
-    </div>
 
 
     <div id="button-st">
@@ -101,9 +101,6 @@
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
   <script>
-    var score = 0;
-    if (localStorage.getItem('score')) { score += localStorage.getItem('score') }
-    
     var num = 1;
     var q = {
       1: { "title": "", "type": "EI", "A": "#include <stdio.h> 추가", "B": "파일이나 폴더명 다시 확인하기", "C": "명령어 뒤 세미콜론 (;) 붙이기" },
@@ -120,10 +117,6 @@
       "ISTJ": { "animal": "강아지", "explain": "강아지 설명", "img": "dog.png" },
       "ENFP": { "animal": "병아리", "explain": "병아리 설명", "img": "dog.png" },
       "ENTJ": { "animal": "고양이", "explain": "고양이 설명", "img": "dog.png" }
-    }
-    function scoreCal() {
-      localStorage.setItem("score", score);
-      location.href = '../index.html'
     }
     function ready() {
       $(".ready").hide();
@@ -165,7 +158,6 @@
             $('#pop2').show();
             $('#pop2').click(function () {
               $('#pop2').hide();
-              score++;
               num++;
               next();
             });
@@ -191,7 +183,6 @@
             $('#pop2').show();
             $('#pop2').click(function () {
               $('#pop2').hide();
-              score++;
               num++;
               next();
             });
@@ -234,7 +225,6 @@
             $('#pop').click(function () {
               $('#pop').hide();
               $('#pop2').hide();
-              score++;
               num++;
               next();
             });
@@ -275,7 +265,6 @@
             $('#pop2').show();
             $('#pop2').click(function () {
               $('#pop2').hide();
-              score++;
               num++;
               next();
             });
@@ -307,44 +296,43 @@
             $('#pop').hide();
           });
           break;
-        case 5:
-          $("#four").hide();
-          $("#five").show();
+         case 5:
+            $("#four").hide();
+            $("#five").show();
 
-          $('#A').click(function () {
-            $('#lastpop').hide();
-            $('#lastpop2').show();
-            $('#lastpop2').click(function () {
-              $('#lastpop2').hide();
-              score++;
-            });
-          });
-
-          $('#B').click(function () {
-            $('#lastpop2').hide();
-            $('#lastpop').show();
-            $('#lastpop').click(function () {
+            $('#A').click(function() {
               $('#lastpop').hide();
+              $('#lastpop2').show();
+              $('#lastpop2').click(function() {
+                $('#lastpop2').hide();
+               });
+             });
+         
+            $('#B').click(function() {
               $('#lastpop2').hide();
-            });
-          });
+              $('#lastpop').show();
+              $('#lastpop').click(function() {
+                $('#lastpop').hide();
+                $('#lastpop2').hide();
+               });
+              });
 
-          $('#C').click(function () {
-            $('#lastpop2').hide();
-            $('#lastpop').show();
-            $('#lastpop').click(function () {
-              $('#lastpop').hide();
+            $('#C').click(function() {
               $('#lastpop2').hide();
-            });
-          });
-
-          $('#close').click(function () {
-            $('#pop').hide();
-          });
-          break;
-        default:
-          alert("어떤 값인지 파악이 되지 않습니다.");
-      }
+              $('#lastpop').show();
+              $('#lastpop').click(function() {
+                $('#lastpop').hide();
+                $('#lastpop2').hide();
+               });
+            });  
+          
+             $('#close').click(function() {
+               $('#pop').hide();
+             });
+            break;
+          default:
+            alert( "어떤 값인지 파악이 되지 않습니다." );
+        }
 
     }
 

@@ -21,7 +21,7 @@ body {
   height: 100vh;
   width: 57.666372462vh;
   margin: 0;
-  background-image: url("../image/main_page.png");
+  background-image: url("./introSection/image/main_page.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
