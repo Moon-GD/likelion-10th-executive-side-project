@@ -34,6 +34,7 @@ article {
 .ques2:hover {
   background-color: rgba(71, 71, 71, 0.274);
   color:rgb(255, 255, 255);
+  outline:none;
 }
 
 .ques3 {
@@ -53,5 +54,6 @@ article {
 .ques3:hover {
   background-color: rgba(71, 71, 71, 0.274);
   color:rgb(255, 255, 255);
+  outline:none;
 }
 
