@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap');
+
+body {
+  width: 100vw;
+  height: calc(var(--vh, 1vh) * 100);
+  margin: 0;
+  background-image: url(good.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: black;
+  align-items: center;
+  text-align: center;
+}
+
+article {
+  position: relative;
+  top: 65%;
+}
+.ques2 {
+  background-color: rgba(255, 255, 255, 0.856);
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  width: 120px;
+  height: 120px;
+  border-radius: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0 auto;
+  
+}
+
+.ques2:hover {
+  background-color: rgba(71, 71, 71, 0.274);
+  color:rgb(255, 255, 255);
+}
+
+.ques3 {
+  background-color: rgba(255, 255, 255, 0.856);
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  width: 120px;
+  height: 120px;
+  border-radius: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.ques3:hover {
+  background-color: rgba(71, 71, 71, 0.274);
+  color:rgb(255, 255, 255);
+}
+
