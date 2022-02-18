@@ -87,10 +87,12 @@ body {
     width: 40vh;
     height: 4vh;
     font-family: Roboto;
-    font-style: bold;
-    font-weight: 150vh;
+    font-style: normal;
+    font-weight: 500;
     font-size: 3.1774051192vh;
     line-height: 4vh;
+
+    color: #34494B;
 
     display: flex;
     align-items: center;
@@ -103,13 +105,14 @@ body {
     width: 46vh;
     height: 6.1782877317vh;
     font-family: Roboto;
-    font-style: bold;
-    font-weight: 150vh;
+    font-style: normal;
+    font-weight: 300;
     font-size: 2.6478375993vh;
     line-height: 3.2vh;
-    letter-spacing:-0.1vh;
     text-align: center;
     color: #6B8588;
+
+
 
     display: flex;
     align-items: center;
@@ -209,6 +212,7 @@ body {
     margin-top: 5.6665489850vh;
     z-index: 1;
     margin-left: 10.5vh;
+
 
 }
 
