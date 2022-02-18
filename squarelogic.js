@@ -122,7 +122,7 @@ if (localStorage.getItem("score")) {
 
 //네모로직1 화면의 팝업창, 초기 네모로직 세팅 설정
 window.onload = function () {
-  startSquare(60); //초기 랜덤 셋팅 횟수
+  startSquare(30); //초기 랜덤 셋팅 횟수
 
   Swal.fire({
     title: "멋사 네모로직 퀴즈",
