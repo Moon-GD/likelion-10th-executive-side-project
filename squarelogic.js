@@ -120,8 +120,10 @@ if (localStorage.getItem("score")) {
   score += localStorage.getItem("score");
 }
 
-//네모로직1 화면의 팝업창
+//네모로직1 화면의 팝업창, 초기 네모로직 세팅 설정
 window.onload = function () {
+  startSquare(60); //초기 랜덤 셋팅 횟수
+
   Swal.fire({
     title: "멋사 네모로직 퀴즈",
     text: "개발에 필요할 순발력과 센스를 미리 발휘해보세요!",
@@ -134,6 +136,21 @@ window.onload = function () {
     },
   });
 };
+
+// 랜덤 숫자 뽑기
+function randomNum(min, max) {
+  var randNum = Math.floor(Math.random() * (max - min + 1)) + min;
+  return randNum;
+}
+
+// 네모로직 초기 세팅
+function startSquare(num) {
+  for (var i = 0; i < num; i++) {
+    var randomIndex = answer[randomNum(0, 66)];
+    document.getElementById(randomIndex).style.background = "grey";
+    square[randomIndex] = 1;
+  }
+}
 
 // 네모로직 결과물 제출
 function checkSquare() {
